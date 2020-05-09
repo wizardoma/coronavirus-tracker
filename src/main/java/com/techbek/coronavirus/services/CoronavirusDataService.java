@@ -7,7 +7,6 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import org.thymeleaf.util.StringUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
@@ -48,5 +47,7 @@ public class CoronavirusDataService  {
         }
         allStats=newStats;
     }
+
+
 
 }

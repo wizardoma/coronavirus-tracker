@@ -10,14 +10,19 @@
 <h1>CoronaVirus Data</h1>
 <table>
     <tr>
-    <th>Country</th>
-    <th>Total Cases</th>
-    <th>New Cases</th>
+        <th>Country</th>
+        <th>Total Cases</th>
+        <th>New Cases</th>
     </tr>
-    <tr th:each="data : ${virusdata}">
+    <tr th:each="data : ${virusData}">
         <td th:text="${data.country}"></td>
         <td th:text="${data.latestTotalCases}"></td>
         <td th:text="${data.newCases}"></td>
+    </tr>
+    <tr>
+        <td>Totals</td>
+        <td th:text="${totalCases}"></td>
+        <td th:text="${newCases}"></td>
     </tr>
 </table>
 </body>
